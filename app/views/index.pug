@@ -1,0 +1,13 @@
+doctype html
+html(lang="en")
+ head
+  title File Metadata Microservice by Mladen
+  meta(name='viewport', content='width=device-width, initial-scale=1')
+  link(rel='stylesheet', href='/css/style.css')
+ body
+  #container
+   h1 File Metadata Microservice by Mladen
+   p Upload file and get the size of it as a response.
+   form#fileUploadForm(enctype='multipart/form-data', action='/', method='post')
+    input#fileInputBtn(type='file', name='uploaded_file')
+    input#submitBtn(type='submit', value='Upload')
